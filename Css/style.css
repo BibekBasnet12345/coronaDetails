@@ -1,0 +1,16 @@
+body{
+    padding: auto;
+    margin: auto;
+}
+
+.container{
+    width: 700px;
+background: red;   
+
+}
+
+.corona_desc{
+    background-color:  powderblue;
+    padding: 30px;
+    font-size: 20px;
+  }
