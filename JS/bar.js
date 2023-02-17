@@ -5,13 +5,13 @@ document.addEventListener('DOMContentLoaded',()=>{
         "Categories": "['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']"
       }, {
         "SeiresName": "corona total cases ",
-        "Data": "[49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]"
+        "Data": "[9776,  88949, 872799, 6035242, 19900177,	39194882, 80052648,	174598008, 336071079, 456064183, 672189541,	834150040]"
       }, {
         "SeiresName": "Total Recovery",
-        "Data": "[83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]"
+        "Data": "[222,  46796, 178901, 1944850, 8549323, 21431446, 43199558, 107704148, 	233514398, 	313292830, 	447753320,	566308211]"
       }, {
         "SeiresName": "Total Death",
-        "Data": "[48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]"
+        "Data": "[213,2994,41582,	374327,	730372,1098002,1789124,	3665821,	9240269,	11515227,	15444807,	18205584]"
       }]
       var categories = [];
       var seriesData = [];
@@ -32,22 +32,28 @@ document.addEventListener('DOMContentLoaded',()=>{
           type: 'column'
         },
         title: {
-            text: 'Corona Details in Nepal , 2019-2020',
+            text: 'Corona Death in Nepal , 2019-2020',
             align: 'center'
-        },
-    
-        subtitle: {
-            text: 'Source: <a href="https://irecusa.org/programs/solar-jobs-census/" target="_blank">IREC</a>',
-            align: 'left'
         },
         yAxis: {
           min: 0,
           title: {
-            text: 'Y-Axis Title'
+            text: 'Numbers'
           }
         },
         legend: {
-          reversed: true
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle'
+        },
+    
+        plotOptions: {
+            series: {
+                label: {
+                    connectorAllowed: true
+                },
+                
+            }
         },
         xAxis: {
           categories: categories
