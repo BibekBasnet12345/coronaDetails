@@ -3,14 +3,37 @@ body{
     margin: auto;
 }
 
-.container{
-    width: 700px;
-background: red;   
 
+h2,h3{
+    text-align: center;
 }
 
 .corona_desc{
     background-color:  powderblue;
     padding: 30px;
     font-size: 20px;
+  }
+  #barid,#lineid{
+    width: 99vw;
+    height: 500px;
+   display: flex;
+   margin: auto;
+   border-radius: 10px;
+    background-color: rgba(5, 22, 79, 0.861);
+  }
+
+  #bargraph,#container{
+    width: 98%; 
+    margin: auto; 
+    position: relative;
+     border-radius: 10px  ;
+  }
+  #nepal{
+    background-color:  powderblue;
+    padding: 30px;
+    font-size: 20px;
+  }
+  .one{
+    font-size: 20px;
+    font-weight: bolder;
   }

@@ -5,8 +5,9 @@ document.addEventListener('DOMContentLoaded',()=>{
         "Categories": "['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']"
       }, {
         "SeiresName": "Total Death",
-        "Data": "[48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]"
-      }]
+        "Data": "[213,2994,41582,	374327,	730372,1098002,1789124,	3665821,	9240269,	11515227,	15444807,	18205584]"
+   
+           }]
       var categories = [];
       var seriesData = [];
       for (var i = 0; i < jsondata.length; i++) {
